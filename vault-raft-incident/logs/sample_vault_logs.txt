@@ -1,0 +1,5 @@
+## **logs/sample_vault_logs.txt**
+
+*(Paste redacted logs showing failed authentication, leader election, and Raft messages.)*
+
+---

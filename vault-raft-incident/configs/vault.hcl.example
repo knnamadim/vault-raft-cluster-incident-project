@@ -1,0 +1,15 @@
+storage "raft" {
+  path    = "/vault/data"
+  node_id = "node-v1"
+}
+
+listener "tcp" {
+  address       = "0.0.0.0:8200"
+  tls_cert_file = "/path/to/cert.pem"
+  tls_key_file  = "/path/to/key.pem"
+}
+
+seal "awskms" {
+  region     = "us-east-1"
+  kms_key_id = "your-key-id"
+}
